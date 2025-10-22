@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-0ecp+*6i%nq!=q!j9y*=6^4(jt#w!@-6tm2(xv7n*y(%0=c=we
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '10.0.2.2', '.pythonanywhere.com', 'localhost', 'kubernetes.docker.internal',]
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 MIDDLEWARE = [
